@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+header .title {
+    font-size: 20px;
+}
+
+header .logo1 {
+    position: relative;
+    left: 1%;
+    height: auto;
+    width: 27%;
+}
+
+header .logo {
+    position: relative;
+    right: 5%;
+    height: auto;
+    width: 6%;
+} 
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header, footer {
+    overflow: hidden;
+    text-align: center;
+    background: #125187;
+    color: #fff;
+    line-height: 50px;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+header .title {
+    flex-grow: 2;
+    position: relative;
+    right: 8%;
+    bottom: 9%;
+    text-shadow: 3px 3px 3px black;
+}
+
+section {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 2fr;    
+    height: 100%;
+}
+
+main {
+    overflow: auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    color: #16456d;
+    text-decoration: none;
+    background: #b4dcff;
+}
+
+.menu li {
+    margin: 20px 15px 20px 0;
+}
+
+.menu li a{
+    display: inline-block;
+    background: #fafafa;
+    border: 2px solid #16456d;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 0;
+    width: 60%;
+    transition-duration: 0.5s;
+    color: #125187;
+}
+
+.add_his {
+    font-size: 14px;
+}
+
+.img {
+    border-radius: 10px;
+    margin-bottom:10%;
+    height: 100%;
+    width: 90%;
+    transition: 0.5s;
+}
+
+.img:hover {
+   transition: 0.5s;
+   transform: scale(1.05, 1.05);
+}
+
+.chapter-not-index {
+    padding: 20px 10px;
+    border:1px solid  #16456d;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    transition: 0.5s;
+    margin: 10px 10% 30px 10%;
+}
+
+.chapter-not-index:hover {
+    background: #125187;
+    color: white;
+    transition: 0.5s;
+}
+
+.dropdown-list {
+	background: transparent;
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+	border-radius: 15px;
+    animation: list 0.6s forwards;
+}
+
+.dropdown-list li{ 
+	margin-right: 10%;
+	margin-top: 3%;
+	font-size: 14px;
+	padding: 0 10px;
+} 
+
+.menu li:hover > .dropdown-list {
+	display: block;
+    animation: list 0.6s forwards;
+}
+
+#footer-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 15px;
+    position: relative;
+    right: 25px;
+}
+
+#footer-list {
+	display: none;
+}
+
+#footer-menu li a{
+	color: white;
+	display: block;
+	padding: 0 55px;
+}
+
+
+#footer-list li{
+	border:1px solid white;
+	border-radius: 15px;
+	margin: 3% 0;
+    width: 40%;
+    margin-left: 32%;
+    margin-right: 30%;
+}
+
+#footer-list li:hover a {
+	color: black;
+	transition: 0.5s;
+}
+
+#footer-list li:hover {
+	background-color: white;
+	transition: 0.5s;
+}
+
+#footer-menu li:hover > #footer-list {
+	display: block;
+ 	animation: list 2.5s forwards;
+}
+
+@keyframes list {
+	0% {opacity: 0;}
+  	100% {opacity: 1;}
+}
+
+#adress,#contact {
+	cursor: pointer;
+}
+
+.modal-contact {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+}
+
+.modal-content-contact {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+	border: 2px solid #16456d;
+	color: #125187;
+	font-family: 'Comfortaa', cursive;
+	font-size: 14px;
+	line-height: 20px;
+    letter-spacing: 2px;
+    padding: 3px;
+}
+
+.our_contact { /*заголовок окошка*/
+	font-size: 18px;
+	padding: 10px 10px;
+    border:1px solid  white;
+    text-align: center;
+    margin: 15px 10% 15px 10%;
+	border-radius: 15px;
+	background-color: #125187;
+	color:white;
+}
+
+.modal-adress {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+}
+
+.modal-content-adress {	
+    background-color: white;
+    width: 500px;
+    height: 300px;
+	border: 2px solid #16456d;
+	color: #125187;
+	font-family: 'Comfortaa', cursive;
+	font-size: 14px;
+	line-height: 25px;
+    letter-spacing: 2px;
+    padding: 3px;
+}
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    width: 5px;
+    background: #b4dcff;
+}
+::-webkit-scrollbar-thumb {
+    width: 1em;
+    background-color: #125187;
+    outline: 1px solid #0f0275;
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1973c3;
+}
+
+@media (min-width: 358px) {
+    header .title {
+        font-size: 5px;
+        bottom: 0;
+        line-height: 29px;
+        letter-spacing: 1.1px;
+    }
+
+    header .logo {
+        right: 8%;
+    }
+
+    header .logo1 {
+        width: 22%;
+    }
+
+    .chapter-not-index {
+        font-size: 13px;
+    }
+
+    .add_his {
+		font-size: 12px;
+	}
+
+    .menu li {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .menu li a{
+        padding: 6px 1px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #footer-menu li a {
+        font-size: 8px;
+        padding: 0;
+    }
+
+    #footer-menu {
+        right: 5px;
+    }
+
+    .dropdown-list {
+        width: 100%;
+    }
+
+    .dropdown-list li {
+        margin: 5px 0 0 0;
+    }
+}
+
+@media (min-width: 525px) {
+    header .title {
+        font-size: 7px;
+        bottom: 0;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    header .logo {
+        right: 8%;
+    }
+
+    header .logo1 {
+        width: 23%;
+    }
+
+    .chapter-not-index {
+        font-size: 16px;
+    }
+
+	.add_his {
+		font-size: 15px;
+	}
+
+    .menu li {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .menu li a{
+        padding: 6px 1px;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    #footer-menu li a {
+        font-size: 12px;   
+    }
+
+    #footer-menu {
+        right: 3px;
+        padding: 0;
+    }
+
+    .dropdown-list li {
+        margin: 5px 0 0 0;
+    }
+}
+/* Устроства с маленьким экраном (планшеты, 768px и выше) */
+@media (min-width: 768px) {
+    header .title {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .chapter-not-index {
+        font-size: 18px;
+    }
+
+    .add_his {
+		font-size: 17px;
+	}
+
+    .menu li {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .menu li a{
+        padding: 8px 13px;
+        font-size: 16px;
+    }
+
+    .dropdown-list {
+        width: 80%;
+    }
+
+    .dropdown-list li {
+        margin: 5px 0 0 0;
+    }
+
+    #footer-menu li a {
+        font-size: 16px;
+    }
+
+    #footer-menu {
+        right: 10px;
+        padding: 0;
+    }
+    /* Стили для устройств с шириной viewport, находящейся в диапазоне 768px - 991px */
+    }
+    
+/* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше) */
+@media (min-width: 992px) {
+    header .title {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .chapter-not-index {
+        font-size: 21px;
+    }
+
+    .add_his {
+		font-size: 20px;
+	}
+
+    .menu li a {
+        padding: 12px 10px;
+        font-size: 18px;
+    }
+
+    #footer-menu li a {
+        font-size: 18px;
+    }
+
+    #footer-menu {
+        right: 15px;
+        padding: 0;
+    }
+    /* Стили для устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+}
+
+/* Устройства с большим экраном (компьютеры, 1200px и выше) */
+@media (min-width: 1200px) {
+    header .title {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .menu li a {
+        padding: 16px 12px;
+        font-size: 20px;
+    }
+
+    .chapter-not-index {
+        font-size: 23px;
+    }
+
+    .add_his {
+		font-size: 22px;
+	}
+
+    #footer-menu li a {
+        font-size: 16px;
+    }
+
+    #footer-menu {
+        right: 2px;
+        padding: 0;
+    }
+    /* Стили для устройств с шириной viewport >1200px */
+}

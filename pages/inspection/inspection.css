@@ -1,0 +1,130 @@
+body {
+	background-image: url('../../assets/images/vc13.png');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+section {
+	display: block;
+	height: 100%;
+	overflow: auto;
+}
+
+main {
+	overflow: hidden;
+}
+
+.menu {
+	background: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.menu li {
+	position: relative;
+	padding: 0;
+}
+
+.menu li a {
+	width: 100%;
+}
+
+.menu a:hover {
+	background: #85c1f5;
+    border-radius: 5px;
+    border-color: #16456d;
+    transition-duration: 0.5s;
+}
+
+.sign {
+	font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+	color: black;
+	margin-bottom: 15px;
+	font-size: 18px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.block-video {
+	display: flex;
+	justify-content: space-around;
+}
+
+.video {
+	border-radius: 10px;
+	height: 300px;
+	width: 500px;	
+}
+
+@media (min-width: 358px) {
+	.sign {
+        font-size: 8px;
+    }
+
+	.video {
+        height: 100px;
+	    width: 160px;
+    }
+
+	.menu {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 525px) {
+	.sign {
+        font-size: 12px;
+    }
+	.video {
+        height: 125px;
+	    width: 225px;
+    }
+
+	.menu {
+        flex-direction: row;
+    }
+}
+@media (min-width: 768px) {
+	.sign {
+        font-size: 14px;
+    }
+	.video {
+        height: 150px;
+	    width: 300px;
+    }
+
+	.menu {
+        flex-direction: row;
+    }
+}
+@media (min-width:992px) {
+	.sign {
+        font-size: 18px;
+    }
+	.video {
+        height: 200px;
+	    width: 400px;
+    }
+
+	.menu {
+        flex-direction: row;
+    }
+}
+@media (min-width: 1200px) {
+	.sign {
+        font-size: 22px;
+    }
+	.video {
+        height: 300px;
+	    width: 500px;
+    }
+
+	.menu {
+        flex-direction: row;
+    }
+	
+}

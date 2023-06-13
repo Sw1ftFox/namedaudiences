@@ -1,0 +1,47 @@
+main {
+	height: 100%;
+}
+
+.parallax {
+	background-image: url('../assets/images/vc1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+.chapter {
+	padding: 20px 10px;
+	border:1px solid  #16456d;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	font-size: 18px;
+	transition: 0.5s;
+	margin: 10px 10%;
+}
+
+.chapter:hover {
+	background: #125187;
+	color: white;
+	transition: 0.5s;
+}
+
+.info {
+	width: 80%;
+	background: #fff;
+	border:1px solid  #16456d;
+	box-shadow: 2px 2px 0  black;
+	padding: 20px 20px;
+	position: relative;
+	z-index: 2;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0 7%;
+}
+
+.menu a:hover {
+    color: white;
+    background: #16456d;
+    border-radius:   5px;
+    border-color: #16456d;
+    transition-duration: 0.5s;
+    transform: translateX(20px);
+}
